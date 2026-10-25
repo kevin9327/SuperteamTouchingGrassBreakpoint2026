@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superteam Earn — Touching Grass Fund Korea ($500 USDG) + Build for Breakpoint ($200 USDG)</title>
+  <style>
+    :root {
+      --bg: #060b12;
+      --card: #0e1824;
+      --border: #1e334a;
+      --green: #14f195;
+      --purple: #9945ff;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top left, #102a24 0%, var(--bg) 65%);
+      color: var(--text);
+      padding: 28px;
+      line-height: 1.55;
+    }
+    .container { max-width: 1240px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, rgba(20,241,149,0.16), rgba(153,69,255,0.12));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(20,241,149,0.16);
+      color: var(--green);
+      border: 1px solid rgba(20,241,149,0.45);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 1.65rem; font-weight: 800; }
+    .subtitle { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .box {
+      background: #05090f;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 0.83rem;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    button {
+      background: var(--green);
+      color: #05090f;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 0.82rem;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Superteam Earn Grants • $700 USDG Cash Pool (0 Apps in Korea / 6 Apps in Breakpoint!)</span>
+      <h1>Seoul Solana Ship-Day &amp; Build-for-Breakpoint Agentic Hub</h1>
+      <p class="subtitle">Grant A: <code>touching-grass-korea</code> ($500 USDG, South Korea, 0 Live Applications!) • Grant B: <code>build-for-breakpoint</code> ($200 USDG, 6 Live Applications!)</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h2>🇰🇷 Grant A: The Touching Grass Fund Korea ($500 USDG)</h2>
+        <p style="font-size:0.84rem;color:var(--muted);">
+          URL: <code>https://earn.superteam.fun/grants/touching-grass-korea</code> • Live Applications: <strong>0</strong>
+        </p>
+        <div class="box" id="grant-a-box">Event: Seoul Solana Ship-Day & Breakpoint Live Co-Working Session (Seongsu / Gangnam)
+Target Attendees: 30 Korean Solana Developers, Founders & Designers
+
+Itemized 500.00 USDG Budget:
+- Venue Rental (6h Seongsu/Gangnam Co-Working Loft): 240.00 USDG
+- Specialty Coffee & Finger Food Catering:           160.00 USDG
+- AV / Dual-Projector & Solana Pay QR Standees:       60.00 USDG
+- On-Chain cNFT POAP & Lightning Demo Micro-Prizes:   40.00 USDG
+Total: 500.00 USDG
+
+Solana Pay Check-In URI:
+solana:7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU?amount=1.00&spl-token=2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH</div>
+        <button onclick="copyBox('grant-a-box')">Copy Touching Grass Korea Proposal</button>
+      </div>
+
+      <div class="card">
+        <h2>🇬🇧⚡ Grant B: Build for Breakpoint Agentic Grant ($200 USDG)</h2>
+        <p style="font-size:0.84rem;color:var(--muted);">
+          URL: <code>https://earn.superteam.fun/grants/build-for-breakpoint</code> • Deadline: Nov 14, 2026 • Live Applications: <strong>6</strong>
+        </p>
+        <div class="box" id="grant-b-box">Product: SolanaQuorum-PMF & Escrow Pay (Live Solana Integration)
+Target Accelerators: Colosseum, Y Combinator, a16z speedrun, Alliance
+
+Payout Structure (200.00 USDG):
+- Upfront Tranche (50% = 100 USDG): Disbursed immediately post-KYC approval to fund AI coding Pro tooling.
+- Completion Tranche (50% = 100 USDG): Disbursed upon live Solana product deployment before Breakpoint London (Nov 15-17, 2026).
+
+Live Solana Features:
+1. Multi-RPC Mainnet Slot & Latency Quorum Verification
+2. Solana Pay USDG/USDC Instant Checkout & Split Settlement URI
+3. Real-time PMF Cohort Retention & Accelerator Readiness Scorecard</div>
+        <button onclick="copyBox('grant-b-box')">Copy Build for Breakpoint Proposal</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyBox(id) {
+      navigator.clipboard.writeText(document.getElementById(id).textContent);
+      alert('Copied grant proposal to clipboard!');
+    }
+  </script>
+</body>
+</html>
